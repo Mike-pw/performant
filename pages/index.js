@@ -37,12 +37,12 @@ export default function Home() {
 
       <Navbar />
       <Hero />
+      <a id="services" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Performant Benefits"
         title=" Why choose Performant?">
         Performant is a small agency that works with a minimal number of clients to ensure your business gets the time and attention it deserves
       </SectionTitle>
-      <a id="services" className="relative bottom-[80px]"></a>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <a id="pricing" className="relative bottom-[95px]"></a>
@@ -54,28 +54,28 @@ export default function Home() {
       <Pricing />
       <a id="projects" className="relative bottom-[80px]"></a>
       <SectionTitle
-        pretitle="Past Projects"
-        title="DB Landscaping">
+        pretitle="Past Project"
+        title="Brochure">
         DB Landscaping wanted a website to showcase the services they provide. Shortly after launch they attracted their largest contract yet booked through the new site.
       </SectionTitle>
       <a href="https://darrenbeattylandscape.ca">
-      <img src="./img/dble.png" className= "rounded w-[896px] mx-auto opacity-95" />
+      <img src="./img/dble.jpg" className= "rounded w-[896px] mx-auto opacity-95" />
       </a>
       <SectionTitle
-        pretitle="Past Projects"
-        title="Tractor Fab">
-        Tractor Fab had an international E-Commerce site with more than 10 years of orders and customers. We migrated over 200 products to a new custom WooCommerce store.
-      </SectionTitle>
-      <a href="https://tractorfab.com">
-      <img src="./img/tf.png" className= "rounded w-[896px] mx-auto opacity-95" />
-      </a>
-      <SectionTitle
-        pretitle="Past Projects"
-        title="Respark">
+        pretitle="Past Project"
+        title="Blog">
         User login and dashboard for a video game development studio. The interface handled user registration, login, authentication and forgotten passwords.
       </SectionTitle>
       <a href="https://user.playrespark.com">
-      <img src="./img/respark.png" className= "rounded w-[896px] mx-auto opacity-95" />
+      <img src="./img/dennis.jpg" className= "rounded w-[896px] mx-auto opacity-95" />
+      </a>
+      <SectionTitle
+        pretitle="Past Project"
+        title="E-Commerce">
+        Tractor Fab had an international E-Commerce site with more than 10 years of orders and customers. We migrated over 200 products to a new custom WooCommerce store.
+      </SectionTitle>
+      <a href="https://tractorfab.com">
+      <img src="./img/tf.jpg" className= "rounded w-[896px] mx-auto opacity-95" />
       </a>
       <a id="reviews" className="relative bottom-[80px]"></a>
       <SectionTitle

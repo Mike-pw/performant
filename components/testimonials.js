@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
@@ -58,10 +57,10 @@ function Avatar(props) {
   return (
     <div className="flex items-center mt-8 space-x-3">
       <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <Image
-          src={props.image}
-          width="40"
-          height="40"
+        <img
+          src={props.image.src}
+          width="80"
+          height="80"
           alt="Avatar"
           layout="responsive"
           placeholder="blur"

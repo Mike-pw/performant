@@ -1,10 +1,8 @@
-import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
 export default function Benefits(props) {
   const { data } = props;
-
   return (
     <>
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
@@ -13,8 +11,8 @@ export default function Benefits(props) {
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
           <div>
-            <Image
-              src={data.image}
+            <img
+              src={data.image.src}
               width="521"
               height="482"
               alt="Benefits"
