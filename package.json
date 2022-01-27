@@ -17,7 +17,7 @@
     "tailwindcss",
     "free"
   ],
-  "author": "Surjith S M",
+  "author": "Mike Melgren",
   "license": "ISC",
   "dependencies": {
     "@emotion/css": "^11.1.3",
