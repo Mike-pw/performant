@@ -23,13 +23,13 @@ export default function Footer() {
                 <div className="-mr-2">
                   <img
                         src="./img/logo-dark.png"
-                        alt="N"
+                        alt="Performant logo"
                         width="32"
                         height="32"
                         className="w-8 block dark:hidden"/>
                       <img
                         src="./img/logo-light.png"
-                        alt="N"
+                        alt="Performant logo"
                         width="32"
                         height="32"
                         className="w-8 hidden dark:block"

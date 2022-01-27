@@ -61,7 +61,7 @@ function Avatar(props) {
           src={props.image.src}
           width="80"
           height="80"
-          alt="Avatar"
+          alt="Reviewer avatar"
           layout="responsive"
           placeholder="blur"
         />

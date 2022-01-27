@@ -49,7 +49,7 @@ export default function Home() {
       <SectionTitle
         pretitle="Pricing"
         title="Monthly Plans">
-        All you need for one monthly payment.
+        All plans include Hosting, Domain Name, Backups, Security, Maintenance and Support. Everything you need for one monthly payment.
       </SectionTitle>
       <Pricing />
       <a id="projects" className="relative bottom-[80px]"></a>
@@ -59,29 +59,31 @@ export default function Home() {
         DB Landscaping wanted a website to showcase the services they provide. Shortly after launch they attracted their largest contract yet booked through the new site.
       </SectionTitle>
       <a href="https://darrenbeattylandscape.ca">
-      <img src="./img/dble.jpg" className= "rounded w-[896px] mx-auto opacity-95" />
+      <img src="./img/dble.webp" className= "rounded mx-auto opacity-95" width="892" height="501" alt="Darren Beatty Landscaping brochure website" />
       </a>
+      <a id="blog" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Past Project"
         title="Blog">
         User login and dashboard for a video game development studio. The interface handled user registration, login, authentication and forgotten passwords.
       </SectionTitle>
-      <a href="https://user.playrespark.com">
-      <img src="./img/dennis.jpg" className= "rounded w-[896px] mx-auto opacity-95" />
+      <a href="https://dennismcnish.ca">
+      <img src="./img/dennis.webp" className= "rounded mx-auto opacity-95" width="892" height="501" alt="Dennis McNish Mortgage Broker blog website"/>
       </a>
+      <a id="ecommerce" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Past Project"
         title="E-Commerce">
         Tractor Fab had an international E-Commerce site with more than 10 years of orders and customers. We migrated over 200 products to a new custom WooCommerce store.
       </SectionTitle>
       <a href="https://tractorfab.com">
-      <img src="./img/tf.jpg" className= "rounded w-[896px] mx-auto opacity-95" />
+      <img src="./img/tf.webp" className= "rounded mx-auto opacity-95" width="892" height="503" alt="Tractor Fab E-Commerce website"/>
       </a>
       <a id="reviews" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what people are saying">
-        Communication is key
+        Communication is key. We work with you to get the results you need
       </SectionTitle>
       <Testimonials />
       <Cta />
