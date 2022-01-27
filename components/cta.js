@@ -6,10 +6,10 @@ export default function Cta() {
     <Container>
       <div className="mt-12 mb-6 flex flex-wrap items-center justify-between w-full max-w-4xl gap-5 mx-auto text-white bg-gray-100 dark:bg-trueGray-800 px-7 py-7 lg:px-12 lg:py-12 lg:flex-nowrap rounded-xl">
         <div className="flex-grow text-center lg:text-left">
-          <h2 className="text-2xl font-medium lg:text-3xl">
+          <h2 className="text-black dark:text-white text-2xl font-medium lg:text-3xl">
             Invest in your business today!
           </h2>
-          <p className="mt-2 font-medium text-white text-opacity-90 lg:text-xl">
+          <p className="text-gray-600 dark:text-gray-400 mt-2 font-medium text-white text-opacity-90 lg:text-xl">
             No charge for initial consultation
           </p>
         </div>
