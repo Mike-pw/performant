@@ -65,7 +65,7 @@ export default function Home() {
       <SectionTitle
         pretitle="Past Project"
         title="Blog">
-        User login and dashboard for a video game development studio. The interface handled user registration, login, authentication and forgotten passwords.
+        A Mortgage Broker needed a site with a clean, professional layout. He wanted to be able to add blog posts, testimonials, and information about his services.
       </SectionTitle>
       <a href="https://dennismcnish.ca">
       <img src="./img/dennis.webp" className= "rounded mx-auto opacity-95" width="892" height="501" alt="Dennis McNish Mortgage Broker blog website"/>
