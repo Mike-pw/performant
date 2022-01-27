@@ -25,6 +25,7 @@ import PopupWidget from "../components/popupWidget";
 
 export default function Home() {
   return (
+
     <>
       <Head>
         <title>Performant - Web Development Services </title>
@@ -32,7 +33,6 @@ export default function Home() {
           name="description"
           content="Solving your business problems with modern technology"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
@@ -49,7 +49,7 @@ export default function Home() {
       <SectionTitle
         pretitle="Pricing"
         title="Monthly Plans">
-        All plans include Hosting, Domain Name, Backups, Security, Maintenance and Support. Everything you need for one monthly payment.
+        All plans include Hosting, Domain Name, Backups, Security, Maintenance and Support. Everything you need for one monthly payment, no upfront costs.
       </SectionTitle>
       <Pricing />
       <a id="projects" className="relative bottom-[80px]"></a>

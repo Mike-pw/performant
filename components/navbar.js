@@ -17,13 +17,13 @@ export default function Navbar() {
                   <img
                         src="./img/logo-dark.png"
                         alt="Performant Logo"
-                        width="32"
+                        width="27"
                         height="32"
                         className="w-8 block dark:hidden"/>
                       <img
                         src="./img/logo-light.png"
                         alt="Performant Logo"
-                        width="32"
+                        width="27"
                         height="32"
                         className="w-8  hidden dark:block"
                       />
