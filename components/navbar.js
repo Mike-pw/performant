@@ -12,7 +12,7 @@ export default function Navbar() {
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                  <a className="flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-gray-100">
+                  <a href="/" className="flex items-center space-x-2 text-2xl font-medium text-red-500 dark:text-gray-100">
                   <div className="-mr-2">
                   <img
                         src="./img/logo-dark.png"

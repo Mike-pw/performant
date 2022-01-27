@@ -37,7 +37,7 @@ export default function Home() {
 
       <Navbar />
       <Hero />
-      <a id="services" className="relative bottom-[80px]"></a>
+      <a href="#" id="services" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Performant Benefits"
         title=" Why choose Performant?">
@@ -45,14 +45,14 @@ export default function Home() {
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-      <a id="pricing" className="relative bottom-[95px]"></a>
+      <a href="#" id="pricing" className="relative bottom-[95px]"></a>
       <SectionTitle
         pretitle="Pricing"
         title="Monthly Plans">
         All plans include Hosting, Domain Name, Backups, Security, Maintenance and Support. Everything you need for one monthly payment, no upfront costs.
       </SectionTitle>
       <Pricing />
-      <a id="projects" className="relative bottom-[80px]"></a>
+      <a href="#" id="projects" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Past Project"
         title="Brochure">
@@ -61,7 +61,7 @@ export default function Home() {
       <a href="https://darrenbeattylandscape.ca">
       <img src="./img/dble.webp" className= "rounded mx-auto opacity-95" width="892" height="501" alt="Darren Beatty Landscaping brochure website" />
       </a>
-      <a id="blog" className="relative bottom-[80px]"></a>
+      <a href="#" id="blog" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Past Project"
         title="Blog">
@@ -70,7 +70,7 @@ export default function Home() {
       <a href="https://dennismcnish.ca">
       <img src="./img/dennis.webp" className= "rounded mx-auto opacity-95" width="892" height="501" alt="Dennis McNish Mortgage Broker blog website"/>
       </a>
-      <a id="ecommerce" className="relative bottom-[80px]"></a>
+      <a href="#" id="ecommerce" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Past Project"
         title="E-Commerce">
@@ -79,7 +79,7 @@ export default function Home() {
       <a href="https://tractorfab.com">
       <img src="./img/tf.webp" className= "rounded mx-auto opacity-95" width="892" height="503" alt="Tractor Fab E-Commerce website"/>
       </a>
-      <a id="reviews" className="relative bottom-[80px]"></a>
+      <a href="#" id="reviews" className="relative bottom-[80px]"></a>
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what people are saying">
