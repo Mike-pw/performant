@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 
@@ -59,32 +58,22 @@ export default function Navbar() {
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
-                      <Link href="#services">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                        <a href="#services" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
                           Services
                         </a>
-                      </Link>
-                      <Link href="#pricing">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                        <a href="#pricing" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
                           Pricing
                         </a>
-                      </Link>
-                      <Link href="#projects">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                        <a href="#projects" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
                           Projects
                         </a>
-                      </Link>
-                      <Link href="reviews">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md hover:text-red-500 dark:text-gray-300  dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                        <a  href="reviews" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md hover:text-red-500 dark:text-gray-300  dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
                           Reviews
                         </a>
-                      </Link>
-                    <Link href="#">
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-red-600 rounded-md lg:ml-5"
                         onClick={handleContactClick}>
                         Contact
                       </a>
-                    </Link>
                   </>
                 </Disclosure.Panel>
               </div>
@@ -96,37 +85,27 @@ export default function Navbar() {
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
               <li className="mr-3 nav__item">
-                <Link href="#services">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-gray-800">
+                  <a href="#services" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-gray-800">
                     Services
                   </a>
-                </Link>
-                <Link href="#pricing">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-red-500 focus:text-red-500 dark:hover:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-gray-800">
+                  <a href="#pricing" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-red-500 focus:text-red-500 dark:hover:text-red-500 focus:bg-red-100 focus:outline-none dark:focus:bg-gray-800">
                     Pricing
                   </a>
-                </Link>
-                <Link href="#projects">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:hover:text-red-500 focus:outline-none dark:focus:bg-gray-800">
+                  <a href="#projects" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:hover:text-red-500 focus:outline-none dark:focus:bg-gray-800">
                     Projects
                   </a>
-                </Link>
-                <Link href="#reviews">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-red-500 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:hover:text-red-500 dark:focus:bg-gray-800">
+                  <a href="#reviews" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-red-500 focus:text-red-500 focus:bg-red-100 focus:outline-none dark:hover:text-red-500 dark:focus:bg-gray-800">
                     Reviews
                   </a>
-                </Link>
               </li>
           </ul>
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="#">
             <a className="px-6 py-2 text-white bg-red-600 hover:bg-red-500 rounded-md md:ml-5"
               onClick={handleContactClick}>
               Contact
             </a>
-          </Link>
 
           <ThemeChanger />
         </div>

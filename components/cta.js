@@ -19,7 +19,6 @@ export default function Cta() {
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
           <a
-            href="javascript:void(0);"
             className="inline-block py-3 mx-auto text-lg font-medium text-center bg-red-600 hover:bg-red-500  text-white rounded-md px-7 lg:px-10 lg:py-5 "
             onClick={handleContactClick}>
             Get Started Now
