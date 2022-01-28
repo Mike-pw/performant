@@ -55,7 +55,7 @@ export default function Pricing() {
 
             <ul className="text-lg py-6 list-disc mx-auto">
                 <li className="text-red-600 my-1"><span className="text-black dark:text-white">Unlimited products</span></li>
-                <li className="text-red-600 my-1"><span className="text-black dark:text-white">Shop management dystem</span></li>
+                <li className="text-red-600 my-1"><span className="text-black dark:text-white">Shop management system</span></li>
                 <li className="text-red-600 my-1"><span className="text-black dark:text-white">Online payments (2.9% + $0.30)</span></li>
               </ul>
               <a

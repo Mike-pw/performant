@@ -8,7 +8,9 @@ import {
 } from 'react-icons/si'
 import { GiGraduateCap } from "react-icons/gi";
 
-
+function handleContactClick() {
+  document.querySelector("#headlessui-disclosure-button-4").click()
+}
 
 export default function Hero() {
   return (
@@ -27,7 +29,8 @@ export default function Hero() {
             <div className=" py-3 mx-auto w-3/4 flex flex-col justify-around space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="#"
-                className="px-8 py-2 text-lg font-medium text-center text-white bg-red-600 rounded-md hover:bg-red-500">
+                className="px-8 py-2 text-lg font-medium text-center text-white bg-red-600 rounded-md hover:bg-red-500"
+                onClick={handleContactClick}>
                 Get Started
               </a>
               <a

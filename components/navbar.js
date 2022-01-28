@@ -4,6 +4,10 @@ import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
 
+  function handleContactClick() {
+      document.querySelector("#headlessui-disclosure-button-4").click()
+  }
+
   return (
     <div className="w-full px-12 sticky top-0 z-50 bg-white dark:bg-[#171717]">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
@@ -75,8 +79,9 @@ export default function Navbar() {
                           Reviews
                         </a>
                       </Link>
-                    <Link href="/">
-                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-red-600 rounded-md lg:ml-5">
+                    <Link href="#">
+                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-red-600 rounded-md lg:ml-5"
+                        onClick={handleContactClick}>
                         Contact
                       </a>
                     </Link>
@@ -116,8 +121,9 @@ export default function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/">
-            <a className="px-6 py-2 text-white bg-red-600 hover:bg-red-500 rounded-md md:ml-5">
+          <Link href="#">
+            <a className="px-6 py-2 text-white bg-red-600 hover:bg-red-500 rounded-md md:ml-5"
+              onClick={handleContactClick}>
               Contact
             </a>
           </Link>
