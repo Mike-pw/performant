@@ -59,16 +59,16 @@ export default function Navbar() {
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
                         <a href="#services" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
-                          Services
+                          <Disclosure.Button>Services</Disclosure.Button>
                         </a>
                         <a href="#pricing" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
-                          Pricing
+                        <Disclosure.Button>Pricing</Disclosure.Button>
                         </a>
                         <a href="#projects" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-red-500 dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
-                          Projects
+                        <Disclosure.Button>Projects</Disclosure.Button>
                         </a>
                         <a  href="#reviews" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md hover:text-red-500 dark:text-gray-300  dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
-                          Reviews
+                        <Disclosure.Button>Reviews</Disclosure.Button>
                         </a>
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-red-600 rounded-md lg:ml-5"
                         onClick={handleContactClick}>
