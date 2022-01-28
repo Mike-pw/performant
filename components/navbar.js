@@ -70,7 +70,7 @@ export default function Navbar() {
                         <a  href="#reviews" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md hover:text-red-500 dark:text-gray-300  dark:hover:text-red-500 focus:text-red-500 focus:bg-red-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
                         <Disclosure.Button>Reviews</Disclosure.Button>
                         </a>
-                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-red-600 rounded-md lg:ml-5"
+                      <a href="#contact" className="w-full px-6 py-2 mt-3 text-center text-white bg-red-600 rounded-md lg:ml-5"
                         onClick={handleContactClick}>
                         Contact
                       </a>
@@ -102,7 +102,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-            <a className="px-6 py-2 text-white bg-red-600 hover:bg-red-500 rounded-md md:ml-5"
+            <a href="#contact" className="px-6 py-2 text-white bg-red-600 hover:bg-red-500 rounded-md md:ml-5"
               onClick={handleContactClick}>
               Contact
             </a>
