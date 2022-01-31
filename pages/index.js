@@ -56,29 +56,42 @@ export default function Home() {
       <SectionTitle
         pretitle="Past Project"
         title="Brochure">
-        DB Landscaping wanted a website to showcase the services they provide. Shortly after launch they attracted their largest contract yet booked through the new site.
       </SectionTitle>
+      <figure className=" items-center flex w-full flex-col">
       <a href="https://darrenbeattylandscape.ca">
       <img src="./img/dble.webp" className= "rounded mx-auto opacity-95" width="892" height="501" alt="Darren Beatty Landscaping brochure website" />
       </a>
+      <figcaption className="text-center mt-0 max-w-4xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+        DB Landscaping wanted a website to showcase the services they provide. Shortly after launch they attracted their largest contract yet booked through the new site.
+      </figcaption>
+      </figure>
       <div id="blog" className="relative bottom-[80px]"></div>
       <SectionTitle
         pretitle="Past Project"
         title="Blog">
-        A Mortgage Broker needed a site with a clean, professional layout. He wanted to be able to add blog posts, testimonials, and information about his services.
       </SectionTitle>
+      <figure className=" items-center flex w-full flex-col">
       <a href="https://dennismcnish.ca">
       <img src="./img/dennis.webp" className= "rounded mx-auto opacity-95" width="892" height="501" alt="Dennis McNish Mortgage Broker blog website"/>
       </a>
+      <figcaption className="text-center mt-0 max-w-4xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+        A Mortgage Broker needed a site with a clean, professional layout. He wanted to be able to add blog posts, testimonials, and information about his services.
+      </figcaption>
+      </figure>
       <div id="ecommerce" className="relative bottom-[80px]"></div>
       <SectionTitle
         pretitle="Past Project"
         title="E-Commerce">
-        Tractor Fab had an international E-Commerce site with more than 10 years of orders and customers. We migrated over 200 products to a new custom WooCommerce store.
       </SectionTitle>
+      <figure className=" items-center flex w-full flex-col">
       <a href="https://tractorfab.com">
       <img src="./img/tf.webp" className= "rounded mx-auto opacity-95" width="892" height="503" alt="Tractor Fab E-Commerce website"/>
       </a>
+      <figcaption className="text-center mt-0 max-w-4xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+        Tractor Fab had an international E-Commerce site with more than 10 years of orders and customers. We migrated over 200 products to a new custom WooCommerce store.
+      </figcaption>
+      </figure>
+
       <div id="reviews" className="relative bottom-[80px]"></div>
       <SectionTitle
         pretitle="Testimonials"

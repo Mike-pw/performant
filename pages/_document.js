@@ -32,7 +32,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en-US">
+      <Html className="px-6" lang="en-US">
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"

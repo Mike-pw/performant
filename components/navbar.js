@@ -8,7 +8,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="w-full px-12 sticky top-0 z-50 bg-white dark:bg-[#171717]">
+    <div className="w-full sticky top-0 z-50 bg-white dark:bg-[#171717]">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
