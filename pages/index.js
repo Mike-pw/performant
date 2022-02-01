@@ -10,6 +10,7 @@ import Testimonials from "../components/testimonials";
 import Pricing from "../components/pricing";
 import Cta from "../components/cta";
 import PopupWidget from "../components/popupWidget";
+import Contact from "../components/contact";
 
 //import dynamic from "next/dynamic";
 
@@ -100,6 +101,7 @@ export default function Home() {
       </SectionTitle>
       <Testimonials />
       <Cta />
+      <Contact />
       <Footer />
       <PopupWidget />
     </>
