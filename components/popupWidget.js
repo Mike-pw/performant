@@ -81,7 +81,7 @@ export default function PopupWidget() {
                   {!isSuccess && (
                 <form
                   method="POST"
-                  name="contact-form"
+                  name="contact"
                   action="contact/?success=true"
                   data-netlify="true">
                   <input type="hidden" name="form-name" value="contact-form" />
