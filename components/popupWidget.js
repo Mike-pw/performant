@@ -9,10 +9,6 @@ export default function PopupWidget() {
           setIsSuccess(true);
   };
 
-  const reset = (e) => {
-    setIsSuccess(false);
-};
-
   return (
     <div>
       <Disclosure>
@@ -82,7 +78,8 @@ export default function PopupWidget() {
                 <form
                   method="POST"
                   name="contact"
-                  action="contact/?success=true"
+                  onSubmit={handleSubmit}
+                  //action="/"
                   data-netlify="true">
                   <input type="hidden" name="form-name" value="contact" />
                       <div className="mb-4">
@@ -139,7 +136,6 @@ export default function PopupWidget() {
                     </form>
                   )}
                   {isSuccess && (
-                    <>
                       <div className="flex flex-col items-center justify-center h-full text-center text-white rounded-md">
                         <svg
                           width="60"
@@ -158,12 +154,10 @@ export default function PopupWidget() {
                           Message sent successfully
                         </h3>
                         <button
-                          className="mt-6 text-red-600 focus:outline-none"
-                          onClick={() => reset()}>
+                          className="mt-6 text-red-600 focus:outline-none">
                           Go back
                         </button>
                       </div>
-                    </>
                   )}
                 </div>
               </Disclosure.Panel>
