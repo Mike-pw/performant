@@ -90,7 +90,7 @@ export default function PopupWidget() {
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
                   {!isSubmitSuccessful && (
-                    <form name="contact" data-netlify="true" method="POST" onSubmit={handleSubmit(onSubmit)} noValidate>
+                    <form name="contact" netlify method="POST" onSubmit={handleSubmit(onSubmit)} noValidate>
 
                       <div className="mb-4">
                         <label
