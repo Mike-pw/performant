@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import { Disclosure, Transition } from "@headlessui/react";
+import Router from 'next/router'
 
 export default function PopupWidget() {
   const {
     register,
-    handleSubmit,
     reset,
     control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
@@ -16,9 +16,10 @@ export default function PopupWidget() {
 
   const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
 
-  const onSubmit = (e) => {
-          setIsSuccess(true);
+  function handleSubmit() {
           reset();
+          Router.push("/")
+
   };
 
   return (
@@ -88,7 +89,7 @@ export default function PopupWidget() {
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
                   {!isSubmitSuccessful && (
-                    <form name="contact" data-netlify="true" method="POST" action="/">
+                    <form name="contact" data-netlify="true" method="POST" onSubmit={handleSubmit()} >
                       <div className="mb-4">
                         <label
                           htmlFor="full_name"
