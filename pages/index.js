@@ -101,7 +101,6 @@ export default function Home() {
       </SectionTitle>
       <Testimonials />
       <Cta />
-      <Contact />
       <Footer />
       <PopupWidget />
     </>

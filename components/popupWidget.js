@@ -79,8 +79,12 @@ export default function PopupWidget() {
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
                   {!isSuccess && (
-                    <form name="contact" netlify-data="true" method="POST" onSubmit={handleSubmit}>
-
+                <form
+                  method="POST"
+                  name="contact-form"
+                  action="contact/?success=true"
+                  data-netlify="true">
+                  <input type="hidden" name="form-name" value="contact-form" />
                       <div className="mb-4">
                         <label
                           htmlFor="full_name"
