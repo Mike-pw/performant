@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import { Disclosure, Transition } from "@headlessui/react";
-import Router from 'next/router'
+import { Router } from "next/router";
 
 export default function PopupWidget() {
   const {
     register,
+    handleSubmit,
     reset,
     control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
@@ -16,11 +17,11 @@ export default function PopupWidget() {
 
   const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
 
-  function handleSubmit() {
+  const onSubmit = (e) => {
+          setIsSuccess(true);
           reset();
-          Router.push("/")
-
   };
+
 
   return (
     <div>
@@ -89,7 +90,8 @@ export default function PopupWidget() {
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
                   {!isSubmitSuccessful && (
-                    <form name="contact" data-netlify="true" method="POST" onSubmit={handleSubmit()} >
+                    <form name="contact" data-netlify="true" method="POST" onSubmit={handleSubmit(onSubmit)} noValidate>
+
                       <div className="mb-4">
                         <label
                           htmlFor="full_name"
@@ -228,7 +230,6 @@ export default function PopupWidget() {
                         <h3 className="py-5 text-xl text-green-500">
                           Message sent successfully
                         </h3>
-                        <p className="text-gray-700 md:px-3">{Message}</p>
                         <button
                           className="mt-6 text-red-600 focus:outline-none"
                           onClick={() => reset()}>
@@ -257,7 +258,6 @@ export default function PopupWidget() {
                       <h3 className="text-xl text-red-400 py-7">
                         Oops, Something went wrong!
                       </h3>
-                      <p className="text-gray-700 md:px-3">{Message}</p>
                       <button
                         className="mt-6 text-red-600 focus:outline-none"
                         onClick={() => reset()}>
