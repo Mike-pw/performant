@@ -84,7 +84,7 @@ export default function PopupWidget() {
                   name="contact"
                   action="contact/?success=true"
                   data-netlify="true">
-                  <input type="hidden" name="form-name" value="contact-form" />
+                  <input type="hidden" name="form-name" value="contact" />
                       <div className="mb-4">
                         <label
                           htmlFor="full_name"
