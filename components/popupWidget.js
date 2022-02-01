@@ -88,7 +88,7 @@ export default function PopupWidget() {
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
                   {!isSubmitSuccessful && (
-                    <form netlify onSubmit={handleSubmit(onSubmit)} noValidate>
+                    <form name="contact" data-netlify="true" onSubmit={handleSubmit(onSubmit)} noValidate>
                       <input
                         type="hidden"
                         value="YOUR_ACCESS_KEY_HERE"
