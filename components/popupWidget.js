@@ -79,41 +79,21 @@ export default function PopupWidget() {
               enterFrom="opacity-0 translate-y-5"
               leave="transition duration-200 transform ease"
               leaveTo="opacity-0 translate-y-5">
-              <Disclosure.Panel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
+              <Disclosure.Panel className="border-none flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-red-600">
                   <h3 className="text-lg text-white">How can we help?</h3>
                   <p className="text-white opacity-50">
-                    We usually respond in a few hours
+                    We will get back to you soon
                   </p>
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
                   {!isSubmitSuccessful && (
-                    <form name="contact" data-netlify="true" onSubmit={handleSubmit(onSubmit)} noValidate>
-                      <input
-                        type="hidden"
-                        value="YOUR_ACCESS_KEY_HERE"
-                        {...register("apikey")}
-                      />
-                      <input
-                        type="hidden"
-                        value={`${userName} sent a message from Nextly`}
-                        {...register("subject")}
-                      />
-                      <input
-                        type="hidden"
-                        value="Nextly Template"
-                        {...register("from_name")}
-                      />
-                      <input
-                        type="checkbox"
-                        className="hidden"
-                        style={{ display: "none" }}
-                        {...register("botcheck")}></input>
+                    <form name="contact" data-netlify="true" method="POST" onSubmit={handleSubmit(onSubmit)} noValidate>
 
                       <div className="mb-4">
                         <label
                           htmlFor="full_name"
-                          className="block mb-2 text-sm text-gray-600 dark:text-gray-400">
+                          className="block mb-2 text-sm text-gray-600 dark:text-gray-600">
                           Full Name
                         </label>
                         <input
@@ -124,7 +104,7 @@ export default function PopupWidget() {
                             required: "Full name is required",
                             maxLength: 80,
                           })}
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
+                          className={`text-gray-800 w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.name
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-red-600 ring-red-100"
@@ -140,7 +120,7 @@ export default function PopupWidget() {
                       <div className="mb-4">
                         <label
                           htmlFor="email"
-                          className="block mb-2 text-sm text-gray-600 dark:text-gray-400">
+                          className="block mb-2 text-sm text-gray-600 dark:text-gray-600">
                           Email Address
                         </label>
                         <input
@@ -154,7 +134,7 @@ export default function PopupWidget() {
                             },
                           })}
                           placeholder="you@company.com"
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
+                          className={`text-gray-800 w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.email
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-red-600 ring-red-100"
@@ -171,7 +151,7 @@ export default function PopupWidget() {
                       <div className="mb-4">
                         <label
                           htmlFor="message"
-                          className="block mb-2 text-sm text-gray-600 dark:text-gray-400">
+                          className="block mb-2 text-sm text-gray-600 dark:text-gray-600">
                           Your Message
                         </label>
 
@@ -182,7 +162,7 @@ export default function PopupWidget() {
                             required: "Enter your Message",
                           })}
                           placeholder="Your Message"
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
+                          className={`text-gray-800 w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-red-600 ring-red-100"
