@@ -9,6 +9,10 @@ export default function PopupWidget() {
           setIsSuccess(true);
   };
 
+  const reset = (e) => {
+    setIsSuccess(false);
+};
+
   return (
     <div>
       <Disclosure>
@@ -78,20 +82,30 @@ export default function PopupWidget() {
                 <form
                   method="POST"
                   name="contact"
-                  onSubmit={handleSubmit}
-                  //action="/"
+                  action="contact/?success=true"
                   data-netlify="true">
+
+          <input id="company" name="company" required type="text" />
+          <label htmlFor="email">E-mail Address *</label>
+          <input id="email" type="email" name="email" required />
+          <label htmlFor="message">Message *</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+
+
                   <input type="hidden" name="form-name" value="contact" />
                       <div className="mb-4">
                         <label
-                          htmlFor="full_name"
+                          htmlFor="name"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-600">
                           Full Name
                         </label>
                         <input
                           type="text"
-                          id="full_name"
+                          id="name"
+                          name="name"
                           placeholder="John Doe"
+                          required
                           className="text-gray-800 w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring" />
                       </div>
                       <div className="mb-4">
@@ -103,7 +117,9 @@ export default function PopupWidget() {
                         <input
                           type="email"
                           id="email"
+                          name="email"
                           placeholder="you@company.com"
+                          required
                           className="text-gray-800 w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring" />
                       </div>
 
@@ -117,6 +133,7 @@ export default function PopupWidget() {
                         <textarea
                           rows="4"
                           id="message"
+                          name="message"
                           placeholder="Your Message"
                           className="text-gray-800 w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring"
                           required></textarea>
@@ -136,6 +153,7 @@ export default function PopupWidget() {
                     </form>
                   )}
                   {isSuccess && (
+                    <>
                       <div className="flex flex-col items-center justify-center h-full text-center text-white rounded-md">
                         <svg
                           width="60"
@@ -154,10 +172,12 @@ export default function PopupWidget() {
                           Message sent successfully
                         </h3>
                         <button
-                          className="mt-6 text-red-600 focus:outline-none">
+                          className="mt-6 text-red-600 focus:outline-none"
+                          onClick={() => reset()}>
                           Go back
                         </button>
                       </div>
+                    </>
                   )}
                 </div>
               </Disclosure.Panel>
