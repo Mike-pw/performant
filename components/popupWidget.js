@@ -81,19 +81,10 @@ export default function PopupWidget() {
                   {!isSuccess && (
                 <form
                   method="POST"
-                  name="contact"
+                  name="contact-form"
                   action="contact/?success=true"
                   data-netlify="true">
-
-          <input id="company" name="company" required type="text" />
-          <label htmlFor="email">E-mail Address *</label>
-          <input id="email" type="email" name="email" required />
-          <label htmlFor="message">Message *</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Submit</button>
-
-
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="form-name" value="contact-form" />
                       <div className="mb-4">
                         <label
                           htmlFor="name"
