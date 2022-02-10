@@ -8,9 +8,9 @@ import userThreeImg from "../public/img/user3.png";
 export default function Testimonials() {
   return (
     <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 px-3">
       <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-7 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               "Great job, <Mark>good communication</Mark> throughout the process. My website looks very professional."
             </p>
@@ -23,7 +23,7 @@ export default function Testimonials() {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-7 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               "Very pleased with the project and the <Mark>quick response</Mark> time back and forth."
             </p>
@@ -36,7 +36,7 @@ export default function Testimonials() {
           </div>
         </div>
         <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-7 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               "Oh s*** that's looking <Mark>really good</Mark>, that's extremely impressive!"
               </p>
