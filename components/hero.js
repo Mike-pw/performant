@@ -4,7 +4,7 @@ import {
   SiWordpress, 
   SiReact, 
   SiNextdotjs, 
-  SiNodedotjs 
+  SiJavascript 
 } from 'react-icons/si'
 import { GiGraduateCap } from "react-icons/gi";
 
@@ -60,7 +60,7 @@ export default function Hero() {
               <SiNextdotjs size="5em"/>
             </div>
             <div className="flex items-center pt-2 text-gray-400 dark:text-gray-400">
-              <SiNodedotjs size="5em"/>
+              <SiJavascript size="5em"/>
             </div>
           </div>
         </div>
