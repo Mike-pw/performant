@@ -72,9 +72,7 @@ export default function Home() {
         title="Blog">
       </SectionTitle>
       <figure className=" items-center flex w-full flex-col">
-      <a href="https://dennismcnish.ca">
       <img src="./img/dennis.webp" className= "rounded mx-auto opacity-95" width="892" height="501" alt="Dennis McNish Mortgage Broker blog website"/>
-      </a>
       <figcaption className="text-center mt-0 max-w-4xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
         A Mortgage Broker needed a site with a clean, professional layout. He wanted to be able to add blog posts, testimonials, and information about his services.
       </figcaption>
